@@ -11,11 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val list_item = mutableListOf<String>()
+        val list_item = mutableListOf<ListViewModel>()
 
-        list_item.add("a")
-        list_item.add("b")
-        list_item.add("c")
+        list_item.add(ListViewModel("a","b"))
+        list_item.add(ListViewModel("c","d"))
+        list_item.add(ListViewModel("e","f"))
 
         val listview = findViewById<ListView>(R.id.mainListView)
 
